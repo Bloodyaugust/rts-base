@@ -32,5 +32,11 @@ func _unhandled_input(event:InputEvent):
     else:
       _on_end_drawing_selection()
 
+  if event is InputEventMouseButton && event.button_index == BUTTON_RIGHT:
+    if Store.state.unit_selection.size() && !event.is_pressed():
+      for _unit in Store.state.unit_selection:
+        _unit.set_move_target(get_global_mouse_position())
+        print("issuing move order")
+
 func _process(delta):
   update()

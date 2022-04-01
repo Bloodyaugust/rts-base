@@ -10,3 +10,21 @@
 [node name="UIRoot" type="CanvasLayer" parent="."]
 
 [node name="Unit" parent="." instance=ExtResource( 2 )]
+
+[node name="Unit2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 91, 72 )
+
+[node name="Unit3" parent="." instance=ExtResource( 2 )]
+position = Vector2( -46, 66 )
+
+[node name="Unit4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 88, -45 )
+
+[node name="Unit5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 39, 21 )
+
+[node name="Unit6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 262, -61 )
+
+[node name="Unit7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 234, 3 )
