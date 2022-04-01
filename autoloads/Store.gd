@@ -5,7 +5,8 @@ signal state_changed(state_key, substate)
 var persistent_store:PersistentStore
 var state: Dictionary = {
   "client_view": "",
-  "game": ""
+  "game": "",
+  "unit_selection": []
  }
 
 func start_game() -> void:
