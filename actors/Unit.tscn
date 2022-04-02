@@ -5,14 +5,12 @@
 
 [sub_resource type="CircleShape2D" id=1]
 
-[node name="Unit" type="Node2D" groups=["units"]]
+[node name="Unit" type="KinematicBody2D" groups=["units"]]
 script = ExtResource( 1 )
-move_speed = 5.0
+move_speed = 100.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 2 )
-
-[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
-shape = SubResource( 1 )
